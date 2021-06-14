@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body>
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <main>
+            <div class="scoreboard">
+                <div class="scoreboard-title">
+                    <h2>Score</h2>
+                </div>
+                <div class="section" id="player-section">
+                    <p class="name" id="player-name">Player:&nbsp</p>
+                    <p class="score" id="player-score">0</p>
+                    <p class="action" id="player-action"></p>
+                </div><div class="section" id="computer-section">
+                    <p class="name" id="computer-name">Computer:&nbsp</p>
+                    <p class="score" id="computer-score">0</p>
+                    <p class="action" id="computer-action"></p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" onclick="onPlayerSelection(this.id)" id="rock">&#x1FAA8</button>
+                <button class="button" onclick="onPlayerSelection(this.id)" id="paper">&#x1F4C3</button>
+                <button class="button" onclick="onPlayerSelection(this.id)" id="scissors">&#9988</button>
+            </div>
+            <div class="message-box">
+                <i class="message-text" id="message-text">hi</i>
+            </div>
+            
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
